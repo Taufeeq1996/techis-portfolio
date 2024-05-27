@@ -10,3 +10,76 @@
 .navbar .container span {
     color: var(--primary-color);
 }
+
+/* main about */ 
+
+main #about {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+main #about h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: clamp(28px, 1.8vw, 40px);
+}
+main #about h2 span{
+    color: var(--primary-color);
+}
+main #about .mypic-div {
+    width: 25%;
+    margin: 0 auto; 
+}
+main #about .mypic-div img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+main #about .my-info{
+    margin-top: 20px;
+}
+#name {
+    font-size: clamp(25px, 1.5vw, 30px);
+    margin-bottom: 0;
+}
+#designation {
+    font-size: clamp(20px, 1.1vw, 25px);
+    color: gray;
+}
+main #about .my-info .skills-email {
+    margin-bottom: 30px;
+}
+main #about .my-info .skills-email p {
+    font-size: clamp(18px, 0.9vw, 20px);
+    margin-bottom: 10px;
+}
+#skills{
+    color: var(--primary-color);
+}
+main #about .icons a{
+    text-decoration: none;
+}
+main #about .icons img {
+    width: 2vw;
+}
+
+/* media screen  */
+
+@media only screen and (min-width: 651px) and (max-width: 1280px){
+    main #about .icons img{
+        width: 4vw;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    main #about .icons img{
+        width: 8vw;
+    }
+    main #about {
+        padding: 1rem;
+    }
+}
+
+/* The clamp() CSS function clamps a middle value within a range 
+of values between a defined minimum and maximum bound. 
+The function takes 3 parameters : a minimum value , a preferred value, 
+and a maximum allowed value.  */
