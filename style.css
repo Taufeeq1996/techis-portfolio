@@ -1,12 +1,90 @@
-*{
-    margin: 0;
-    padding: 0; 
-    font-family: 'monospace', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "monospace", sans-serif;
 }
-:root{
-    --primary-color: #00abae;
+:root {
+  --primary-color: #00abae;
 }
 /* navbar  */
 .navbar .container span {
+  color: var(--primary-color);
+}
+
+/* main about  */
+
+main #about {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+main #about h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: clamp(28px, 1.8vw, 40px);
+}
+main #about h2 span {
+  color: var(--primary-color);
+}
+main #about .pic-div{
+    width: 25%;
+    margin: 0 auto;
+}
+main #about .pic-div img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+main #about .my-info {
+    margin: 20px 0;
+    padding: 1rem;
+}
+main #about .my-info p {
+    margin-bottom : 0;
+}
+main #about .my-info .name-designation {
+    margin-bottom: 15px;
+}
+#name {
+    font-size: clamp(25px, 1.5vw, 30px);
+}
+#designation{
+    font-size: clamp(20px, 1.1vw, 25px);
+    color: gray;
+}
+#skills {
     color: var(--primary-color);
+}
+#description {
+    margin: 10px 0;
+}
+main #about .my-info .skills-email p{
+    font-size: clamp(18px , 0.9vw, 20px);
+}
+#email {
+    margin-top: 10px;
+}
+main #about .icons a {
+    text-decoration: none;
+}
+main #about .icons img {
+    width: 2vw;
+    margin-left: 10px;
+}
+/* The clamp() CSS function clamps a middle value 
+within a range of values between a defined 
+minimum bound and a maximum bound. 
+The function takes three parameters: a minimum value, 
+a preferred value, and a maximum allowed value. */
+
+/* The full form of VW is viewport width. 
+It works like the percentage unit. 
+Specifying 10vw is equivalent 
+to occupying 10% of entire visible screen width. */
+
+/* main about media screen  */ 
+
+@media only screen and (max-width: 650px) {
+    main #about .icons img {
+        width: 7vw;
+    }
 }
